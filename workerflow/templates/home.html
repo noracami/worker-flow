@@ -1,17 +1,19 @@
 {% extends "base.html" %}
 {% block content %}
-<div class="ui inverted masthead segment">
-    <div class="ui page grid">
-        <div class="column">
-            <p><h1>request.POST</h1><br>{{ request.POST }}</p>
-            <hr>
-            <p><h1>request.POST.submit</h1><br>{{ s }}</p>
-            <hr>
-            <p><h1>request</h1><br>{{ some_var }}</p>
-            <p><h2>session</h2><br>{{ x }}</p>
+<div class="ui page grid">
+    <div class="column">
+        <div class="ui raised segment">
+            <a class="ui ribbon label">Dogs</a>
+            <p>Pretty nice animals.</p>
+            <a class="ui teal ribbon label">Cats</a>
+            <p>Also pretty nice animals, but can prefer solitude.</p>
+            <a class="ui red ribbon label">Ogres and monsters</a>
+            <p>Never seen one as a pet before, but I imagine they'd make pretty terrible companions.</p>
         </div>
+        <div></div>
     </div>
 </div>
+
 <div class="ui inverted footer vertical segment">
     <div class="ui stackable center aligned page grid">
         <div class="ten wide column">

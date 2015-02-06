@@ -24,19 +24,21 @@
         
     </head>
     <body>
-        {% block content %}
-        <div>
-            <div>
-                <p></p>
-                <hr>
-                <p><h1>request.POST</h1><br>{{ request.POST }}</p>
-                <hr>
-                <p><h1>request.POST.submit</h1><br>{{ s }}</p>
-                <hr>
-                <p><h1>request</h1><br>{{ some_var }}</p>
-                <p><h2>session</h2><br>{{ x }}</p>
+        {% block debug %}
+        <div class="ui inverted masthead segment">
+            <div class="ui page grid">
+                <div class="column">
+                    <p><h1>request.POST</h1><br>{{ request.POST }}</p>
+                    <hr>
+                    <p><h1>request.POST.submit</h1><br>{{ s }}</p>
+                    <hr>
+                    <p><h1>request</h1><br>{{ some_var }}</p>
+                    <p><h2>session</h2><br>{{ x }}</p>
+                </div>
             </div>
         </div>
+        {% endblock %}
+        {% block content %}
         {% endblock %}
         
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
