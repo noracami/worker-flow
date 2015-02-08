@@ -6,7 +6,7 @@ urlpatterns = patterns('',
     # url(r'^$', 'workerflow.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
 
-    url(r'^$', 'worker.views.home', name='home'),
+    url(r'^$', 'worker.views.index', name='home'),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^worker/', include('worker.urls', namespace="worker")),
 )
